@@ -16,7 +16,7 @@ from utils import label_map_util
 from utils import visualization_utils as vis_util
 
 # Name of the directory containing the object detection module we're using
-MODEL_NAME = 'faster_rcnn_inception_v2_coco_2018_01_28'
+MODEL_NAME = 'ssd_mobilenet_v1_coco_2017_11_17'
 IMAGE_NAME = 'test_images/pitu.png'
 
 # Grab path to current working directory
@@ -27,7 +27,7 @@ CWD_PATH = os.getcwd()
 PATH_TO_CKPT = os.path.join(CWD_PATH,MODEL_NAME,'frozen_inference_graph.pb')
 
 # Path to label map file
-PATH_TO_LABELS = os.path.join(CWD_PATH,'training','mscoco_label_map.pbtxt')
+PATH_TO_LABELS = os.path.join(CWD_PATH,'data','mscoco_label_map.pbtxt')
 
 # Path to image
 PATH_TO_IMAGE = os.path.join(CWD_PATH,IMAGE_NAME)
